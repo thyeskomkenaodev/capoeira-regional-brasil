@@ -824,15 +824,29 @@
             font-size: 0.9rem;
         }
 
-        .association-logo {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
+        /* Support Section */
+        .support {
+            background-color: var(--light);
         }
 
-        .association-logo img {
-            height: 45px;
+        .support-logo-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .support-logo-wrapper img {
+            max-height: 80px;
             width: auto;
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: var(--transition);
+        }
+
+        .support-logo-wrapper a:hover img {
+            filter: grayscale(0%);
+            opacity: 1;
+            transform: scale(1.05);
         }
 
         .theme-switcher {
@@ -1294,6 +1308,19 @@
         </div>
     </section>
 
+    <!-- Support Section -->
+    <section id="apoio" class="section support">
+        <div class="container">
+            <h2 class="section-title">Apoio</h2>
+            <div class="support-logo-wrapper">
+                <a href="#" title="Link para a Associação">
+                    <img src="logoasociaçao.jpg" alt="Logo da Associação Apoiadora">
+                </a>
+            </div>
+        </div>
+    </section>
+
+
     <!-- Contact Section -->
     <section id="contact" class="section contact">
         <div class="container">
@@ -1390,15 +1417,6 @@
                     </div>
                 </div>
                 
-                <div class="footer-col">
-                    <h3>Apoio</h3>
-                    <div class="association-logo">
-                        <a href="#" title="Link para a Associação">
-                            <img src="logoasociaçao.jpg" alt="Logo da Associação">
-                        </a>
-                    </div>
-                </div>
-
                 <div class="footer-col">
                     <h3>Links Rápidos</h3>
                     <ul class="footer-links">
